@@ -1,0 +1,145 @@
+body {
+    background-color: #696969;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+#container {
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #333;
+}
+
+.artikel-detail {
+    overflow: hidden;
+}
+
+.artikel-image {
+    float: left;
+    margin-left: 90px;
+    padding-top: 40px;
+}
+
+.artikel-image img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.artikel-info {
+    overflow: hidden;
+    text-align: center;
+    padding-top: 30px;
+    margin-right: 265px;
+}
+
+.artikel-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.artikel-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    width: 75%; 
+    margin: 0 auto; 
+}
+
+form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: goldenrod;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: goldenrod;
+}
+
+a {
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer a:hover{
+    text-decoration: none;
+}
+
+span {
+    display: block;
+    margin-top: 10px;
+    color: red;
+}
+
+#sp{
+    display: block;
+    margin-top: 10px;
+    color: #04AA6D;
+}
+
+@media only screen and (max-width: 1000px) {
+    .artikel-image {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 70%;
+    }
+    
+    .artikel-info {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    
+    .artikel-info p {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .artikel-image {
+        width: 90%;
+    }
+    
+    .artikel-info {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    
+    .artikel-info p {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,123 @@
+body {
+    background-color: #696969;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#container {
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #333;
+}
+
+#content-buttons {
+	margin: 10px 0px 10px 0px;
+    text-align: center; 
+}
+
+.knopfunctie,#button-detail {
+    display: inline-block; 
+    margin: 0 10px; 
+    padding: 10px 20px; 
+    background-color: #333; 
+    color: white; 
+    border: 1px solid black; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+	font-size: 14px;
+}
+
+.knopfunctie:hover {
+    background-color: #555;
+}
+
+.Hoofdtitels{
+    color: white;
+    text-align: left;
+    margin: 40px 0px 0px 75px;
+    font-size: 19px;
+}
+
+.producten {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+    width: 30%;
+    padding: 30px 0px 20px 0px;
+    background-color: #696969;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.producten img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producten:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#button-detail{
+    border: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .producten {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .producten {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    .Hoofdtitels {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .knopfunctie, #button-detail {
+        padding: 8px 16px;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    #content-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .producten {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .Hoofdtitels {
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+    .knopfunctie, #button-detail {
+        padding: 6px 12px;
+        font-size: 10px;
+        margin: 5px 0;
+    }
+
+    #content-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

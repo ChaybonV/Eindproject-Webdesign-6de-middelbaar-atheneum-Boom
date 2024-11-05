@@ -1,0 +1,84 @@
+body {
+    background-color: #696969;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center; 
+}
+
+#container { 
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+#bt{
+    margin-bottom: 20px;
+}
+
+table {
+    margin: 20px auto; 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.knopfunctie{
+    display: inline-block; 
+    margin: 0 10px; 
+    padding: 10px 20px; 
+    background-color: #333; 
+    color: white; 
+    border: 1px solid black; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    font-size: 14px;
+}
+
+.knopfunctie:hover {
+    background-color: #555;
+}
+
+.knopfunctie a:hover{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    #container {
+        padding: 10px;
+    }
+    table {
+        font-size: 13px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #container {
+        padding: 5px;
+    }
+    table {
+        font-size: 10px;
+    }
+    .knopfunctie {
+        font-size: 12px;
+    }
+}

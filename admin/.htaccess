@@ -1,0 +1,8 @@
+AuthUserFile C:\Users\ChaybonVerlooy-GO!at\.htpasswd
+AuthGroupFile /dev/null
+AuthName "Aanmelden met gebruikersnaam en wachtwoord"
+AuthType Basic
+
+<Limit GET POST>
+require valid-user
+</Limit>

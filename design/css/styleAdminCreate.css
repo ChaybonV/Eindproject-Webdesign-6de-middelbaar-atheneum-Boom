@@ -1,0 +1,70 @@
+body {
+    background-color: #696969;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+#container {
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #333;
+}
+
+fieldset, table {
+    border: none;
+    margin: 0 auto; 
+    width: 80%;
+}
+
+input[type=text], input[type=submit], .cancelbtn, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+textarea{
+    padding-bottom: 50px;
+}
+
+input[type=submit], .cancelbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 0px auto;
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+}
+
+input[type=submit]:hover, .cancelbtn:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    background-color: #f44336;
+    margin-top: 3px;
+}
+
+a {
+    color: goldenrod;
+}
+
+@media screen and (max-width: 1000px) {
+    #container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #container {
+        width: 100%;
+    }
+    input[type=submit], .cancelbtn {
+        width: 100%;
+    }
+}

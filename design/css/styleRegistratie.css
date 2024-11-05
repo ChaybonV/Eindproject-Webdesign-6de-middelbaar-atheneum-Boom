@@ -1,0 +1,84 @@
+body {
+  background-color: #696969;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+#hoofd-container {
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #333;
+}
+
+fieldset, table {
+  border: none;
+  margin: 0 auto; 
+  width: 80%;
+}
+
+input[type=text],input[type=password],input[type=email] {
+  width: 100%;
+  padding: 11px;
+  margin-top: 5px;
+}
+
+input[type=submit], .cancelbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px;
+  margin-top: 25px;
+  border: none;
+  cursor: pointer;
+  width: 108%;
+}
+
+button:hover, .cancelbtn:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  background-color: #f44336;
+  margin-top: 0px;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  width: 50%; 
+  margin: 0 auto;
+}
+
+#captcha-container {
+  width: 250%;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+#captcha-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.captcha-img{
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+      display: block;
+      float: none;
+  }
+  .cancelbtn {
+      width: 100%;
+  }
+}

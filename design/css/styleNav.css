@@ -1,0 +1,56 @@
+nav {
+    background-color: #333;
+    border: 1px solid black;
+    margin-top: 5px;
+    border-radius: 10px;
+    text-align: right;
+  }
+  
+  #lijst {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  #lijst li {
+    display: inline-block;
+    line-height: 30px;
+  }
+  
+  #lijst li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 10px;
+    transition: background-color 0.3s, border-radius 0.3s;
+  }
+  
+  #lijst li a img {
+    vertical-align: middle;
+  }
+  
+  #lijst li:not(:last-child) a:hover {
+    background-color: #555;
+    border-radius: 10px;
+  }
+  
+  @media only screen and (max-width: 930px) {
+    nav{
+      width: 100%;
+    }
+    
+    #lijst {
+      display: block;
+      text-align: center;
+    }
+  
+    #lijst li {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+  
+  @media only screen and (max-width: 390px) {
+    #lijst li a {
+      padding: 10px 5px;
+    }
+  }  

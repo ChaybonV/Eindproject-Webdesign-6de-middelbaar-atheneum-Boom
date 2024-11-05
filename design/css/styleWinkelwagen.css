@@ -1,0 +1,141 @@
+body {
+    background-color: #696969;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+#container {
+    margin-top: 5px;
+    height: 650px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#left,#right,#right2{
+    margin: 20px 0px 0px 0px;
+    height: 500px;
+    width: 49.3%;
+    background-color: #696969;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow-y: auto;
+    direction: rtl;
+    float: left;
+    display: grid;
+    place-items: center;
+}
+
+#right{
+    height: 300px;
+    width: 50.5%;
+    direction: ltr;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    float: right;
+}
+
+#right2{
+    margin-top: 55px;
+    background-color: #333;
+    height: 120px;
+    overflow-y: hidden;
+    float: right;
+}
+
+table tr td{
+    margin: 5px;
+    padding: 10px;
+}
+
+input[type="submit"],input[type="button"] {
+    background-color: #555;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,input[type="button"]:hover {
+    transform: scale(1.02);
+}
+
+prompt {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#bst{
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 10px;
+}
+
+#bst:hover{
+    transform: scale(1.04);
+}
+
+#sp{
+    color: #04AA6D;
+}
+
+a{
+    color: goldenrod;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+    #left,#right,#right2 {
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    #right {
+        width: 100%;
+        margin-top: 10px;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #container {
+        padding: 10px;
+    }
+
+    #left,#right,#right2 {
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+        height: auto;
+        border-bottom-right-radius: 0;
+    }
+
+    #right {
+        width: 100%;
+        margin-top: 10px;
+        float: none;
+    }
+
+    input[type="submit"],input[type="button"] {
+        width: 100%;
+    }
+}
